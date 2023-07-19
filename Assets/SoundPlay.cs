@@ -4,18 +4,14 @@ using UnityEngine;
 
 public class SoundPlay : MonoBehaviour
 {
-    public AudioSource audioPlayer;
+    public AudioSource PlaySound;
+    public AudioClip clip;
 
-    void Start()
+    public void OnTriggerEnter(Collider other)
     {
-        audioPlayer = GetComponent<AudioSource>();
-    }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Rotater")
-        {
-            audioPlayer.Play();
-        }
+         PlaySound.Play();
+        PlaySound.PlayOneShot(clip);
+
     }
 }

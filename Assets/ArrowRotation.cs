@@ -20,8 +20,8 @@ public class ArrowRotation : MonoBehaviour
 
     //public AudioSource dartHitSound;
 
-      public AudioSource audioPlayer;
-    public AudioClip clip;
+    //  public AudioSource audioPlayer;
+    //public AudioClip clip;
 
     void Start()
     {
@@ -82,8 +82,8 @@ public class ArrowRotation : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Rotater"))
         {
-           audioPlayer.Play();
-            audioPlayer.PlayOneShot(clip);
+           //audioPlayer.Play();
+            //audioPlayer.PlayOneShot(clip);
             Debug.Log("Arrow hit the target!");
          
 
